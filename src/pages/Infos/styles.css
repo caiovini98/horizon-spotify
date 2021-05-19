@@ -1,0 +1,178 @@
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.info-tracks {
+  display: flex;
+  padding: 2rem;
+  height: 100%;
+  border-bottom: 2px solid var(--grey);
+  background: var(--grey);
+}
+
+.everything {
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img {
+  height: 360px;
+  width: 360px;
+  opacity: 0.9;
+}
+
+img:hover {
+  transition: ease-in-out 0.3s;
+  opacity: 1;
+}
+
+.primary-infos {
+  border-bottom: 2px solid #2d3436;
+  border-right: 2px solid #2d3436;
+  display: flex;
+}
+
+.primary-infos h4 {
+  padding: 0.8rem 2rem;
+}
+
+.secondary-infos {
+  padding: 0.8rem 2rem;
+}
+
+.secondary-infos h4 {
+  margin-bottom: 1rem;
+}
+
+.secondary-infos h4 a {
+  font-size: 1.5rem;
+}
+
+.secondary-infos h4 a:hover {
+  text-decoration: none;
+}
+.secondary-infos .copyrigth {
+  position: absolute;
+  bottom: 0;
+}
+
+.copyrigth {
+  padding: 0.8rem 2rem;
+  display: flex;
+}
+
+.copyrigth h4 {
+  margin-right: 1rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.tracks {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+table {
+  border: 1px solid var(--grey);
+  width: 100%;
+}
+
+th,
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--grey);
+  border: 1px solid var(--grey);
+}
+
+th {
+  color: var(--black);
+  text-transform: uppercase;
+  font: 500 1.5rem Lexend, sans-serif;
+  text-align: center;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+td {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+a {
+  color: var(--blue);
+  font-family: Lexend, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.4rem;
+  font-size: 1rem;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tracks button {
+  height: 3rem;
+  padding: 0 1rem;
+  color: var(--black);
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 3rem;
+  background-color: var(--blue);
+  font: 500 1.2rem Lexend, sans-serif;
+}
+
+.tracks button:hover {
+  transition: ease-in 0.05s;
+  opacity: 1;
+}
+
+@media (max-width: 1075px) {
+  .tracks button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 795px) {
+  .info-tracks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    height: 100%;
+  }
+  .primary-infos {
+    border-left: 2px solid #2d3436;
+  }
+}
+
+@media (max-width: 695px) {
+  td,
+  th {
+    font-size: 0.75rem;
+  }
+  .tracks button {
+    font-size: 0.7rem;
+  }
+}

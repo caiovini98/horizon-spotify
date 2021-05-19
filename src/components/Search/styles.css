@@ -1,0 +1,23 @@
+.search {
+  padding: 2rem 4rem;
+}
+
+.search p {
+  color: var(--blue);
+  font-size: 1.3rem;
+}
+
+.form-search {
+  font: 500 1rem Lexend, sans-serif;
+  margin-top: 0.875rem;
+  width: 15rem;
+  padding: 1rem;
+  border: solid 0.13rem var(--black);
+  border-radius: 10px;
+  outline: 0;
+  transition: ease-in-out 0.5s;
+}
+
+.form-search:focus {
+  width: 28rem;
+}

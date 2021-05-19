@@ -1,0 +1,10 @@
+.controler {
+  padding: 0.9375rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timer {
+  font-size: 1.3rem;
+  color: var(--blue);
+}
