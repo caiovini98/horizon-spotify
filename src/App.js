@@ -5,17 +5,8 @@ import Routes from "./routes";
 
 const App = () => {
   useEffect(() => {
-    handleToken();
+    fetchToken();
   });
-
-  const handleToken = () => {
-    let curDateTime = new Date();
-    const { expires_in } = JSON.parse(localStorage.getItem("token"));
-    if (expires_in < curDateTime.getTime()) {
-      localStorage.removeItem("token");
-      fetchToken();
-    }
-  };
 
   const fetchToken = async () => {
     axios("https://accounts.spotify.com/api/token", {

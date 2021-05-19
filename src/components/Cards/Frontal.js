@@ -9,7 +9,7 @@ const Frontal = ({ itens }) => {
     <div>
       <section className="cards">
         {itens.albums.items.map((item) => (
-          <Back item={item} />
+          <Back item={item} key={item.id} />
         ))}
       </section>
     </div>
