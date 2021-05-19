@@ -14,6 +14,8 @@ $ git clone <link>
 # Acesse a pasta do projeto no terminal/cmd
 $ cd horizon-spotify
 
+# Abra a pasta no editor de codigo (VS Code ou outro de sua preferência).
+
 # Instale as dependências
 $ npm install
 
