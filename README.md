@@ -24,6 +24,13 @@ $ npm start
 $ http://localhost:3000
 ```
 
+Caso o comando npm start não funcionar, devido a um erro do "react-script", verifique se a dependência do react-script está disponível ou não no package.json
+Caso não esteja, adicione manualmente no projeto por meio de:
+
+```bash
+$ npm install react-scripts --save
+```
+
 ### 🛠 Tecnologias utilizadas
 
 As seguintes ferramentas foram usadas na construção do projeto:
